@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/select_album"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="1dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/size_4"
+            android:paddingBottom="@dimen/size_4">
+
+            <ImageView
+                android:id="@+id/iv_title_select"
+                android:layout_width="@dimen/size_16"
+                android:layout_height="@dimen/size_16"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="@dimen/size_4"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:id="@+id/btn_title_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="@dimen/size_128"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/size_4"
+                android:paddingTop="@dimen/size_2"
+                android:paddingRight="@dimen/size_20"
+                android:paddingBottom="@dimen/size_2"
+                android:text="选择相册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_imageslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_40"
+        android:scrollbars="none" />
+
+</RelativeLayout>

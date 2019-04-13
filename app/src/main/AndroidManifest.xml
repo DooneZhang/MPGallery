@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.mepstudio.mpgallery">
+    <!-- 往SDCard读写数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取imei -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".album.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".album.activity.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".album.activity.GalleryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Dialog.NoTitle.Translucent" />
+        <activity android:name=".album.activity.SettingsActivity" />
+        <activity android:name=".album.activity.GuideActivity" />
+        <activity android:name=".album.activity.WebActivity" />
+
+        <activity android:name=".optimize.activity.MainActivity" />
+        <activity android:name=".optimize.simpic.SimPicActivity" />
+        <activity android:name=".optimize.album.AlbumsActivity" />
+        <activity android:name=".optimize.album.AlbumItemActivity" />
+        <activity android:name=".optimize.album.SelectedImagesActivity" />
+        <activity android:name=".optimize.recycle.RecyclerPictureActivity" />
+        <activity android:name=".optimize.BigPicActivity" />
+        <activity android:name=".optimize.blurry.BlurryPicActivity" />
+        <activity android:name=".optimize.blurry.BlurryPictureActivity" />
+        <activity
+            android:name=".compressor.CompressActivity"
+            android:theme="@style/NoTitleTheme"/>
+
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true"/>
+        <!--Theme.AppCompat.NoActionBar"-->
+        <!--android:noHistory="true",删掉页面历史-->
+    </application>
+
+</manifest>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backedground2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gaussian">
+
+                <ImageButton
+                    android:id="@+id/settings_nav_back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|left"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_btn_back" />
+
+            </GridLayout>
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- 上圆角-->
+
+                <LinearLayout
+                    style="@style/top_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_Help"
+                        style="@style/usertext"
+                        android:clickable="true"
+                        android:text="使用介绍" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+
+                <LinearLayout
+                    style="@style/mid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_compress_quality"
+                        style="@style/usertext"
+                        android:text="压缩画质" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/bg_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    style="@style/mid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_compress_size"
+                        style="@style/usertext"
+                        android:text="压缩尺寸" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View
+                    style="@style/bg_line"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    style="@style/mid_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_bat_compress_quality"
+                        style="@style/usertext"
+                        android:text="批量压缩画质" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 无圆角-->
+                <LinearLayout
+                    style="@style/mid_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_path"
+                        style="@style/usertext"
+                        android:text="修改保存路径" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <LinearLayout
+                    style="@style/bottom_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="检查更新" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/single_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_about"
+                        style="@style/usertext"
+                        android:text="关于" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/single_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_feedback"
+                        style="@style/usertext"
+                        android:text="反馈与建议" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/single_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_tip"
+                        style="@style/usertext"
+                        android:text="打赏" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/single_layout"
+                    android:background="@color/transtparent_pink">
+
+                    <TextView
+                        android:id="@+id/btn_more"
+                        style="@style/usertext"
+                        android:text="更多软件" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

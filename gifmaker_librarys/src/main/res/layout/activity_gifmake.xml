@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </GridView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/icon_plus" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/iv_add"
+                android:layout_marginStart="@dimen/wh_2dp"
+                android:layout_marginLeft="@dimen/wh_2dp"
+                android:layout_marginTop="@dimen/wh_2dp"
+                android:layout_marginEnd="@dimen/wh_2dp"
+                android:layout_marginRight="@dimen/wh_2dp"
+                android:layout_marginBottom="@dimen/wh_2dp"
+                android:background="@drawable/ico_dele"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ico_dele" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/wh_16dp">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/wh_4dp"
+                android:background="@drawable/radius_right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/wh_4dp"
+                android:paddingTop="@dimen/wh_4dp"
+                android:paddingRight="@dimen/wh_8dp"
+                android:paddingBottom="@dimen/wh_4dp"
+                android:text="选择照片"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/wh_4dp"
+                android:background="@drawable/radius_right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/wh_4dp"
+                android:paddingTop="@dimen/wh_4dp"
+                android:paddingRight="@dimen/wh_8dp"
+                android:paddingBottom="@dimen/wh_4dp"
+                android:text="生成故事相册"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/wh_4dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius_right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/wh_4dp"
+                android:paddingTop="@dimen/wh_4dp"
+                android:paddingRight="@dimen/wh_8dp"
+                android:paddingBottom="@dimen/wh_4dp"
+                android:text="预览"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/wh_4dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius_right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/wh_4dp"
+                android:paddingTop="@dimen/wh_4dp"
+                android:paddingRight="@dimen/wh_8dp"
+                android:paddingBottom="@dimen/wh_4dp"
+                android:text="再来一套"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

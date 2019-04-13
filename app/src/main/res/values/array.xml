@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="model">
+        <item>画质优先</item>
+        <item>平衡模式</item>
+        <item>压缩优先</item>
+        <item>朋友圈模式</item>
+        <item>聊天模式</item>
+    </string-array>
+</resources>

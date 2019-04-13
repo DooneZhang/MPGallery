@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="logoColor">#e49be3f6</color>
+
+    <color name="black_alpha_80">#50000000</color>
+    <color name="black_alpha_112">#70000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- 描边颜色 -->
+    <color name="border_clo">#cccccc</color>
+    <color name="text_clo">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#419de4</color>
+    <color name="bg_color">#e6c7bad5</color>
+    <color name="line">#cfcfcf</color>
+    <color name="transtparent_pink">#75cec8d4</color>
+    <color name="white_transtparent">#a6ffffff</color>
+    <color name="white_transparent_less">#61ffffff</color>
+    <color name="text_white_tranparent">#c8ffffff</color>
+    <color name="gaussian">#14ffffff</color>
+    <color name="tranaparent">#00ffffff</color>
+    <color name="right_bg">#a68ceb81</color>
+    <color name="wrong">#c5c49280</color>
+
+
+
+</resources>

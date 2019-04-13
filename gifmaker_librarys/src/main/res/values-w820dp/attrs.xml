@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--筛选器-->
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color" />
+        <attr name="dddividerColor" format="color" />
+        <attr name="ddtextSelectedColor" format="color" />
+        <attr name="ddtextUnselectedColor" format="color" />
+        <attr name="ddmenuBackgroundColor" format="color" />
+        <attr name="ddmaskColor" format="color" />
+        <attr name="ddmenuTextSize" format="dimension" />
+        <attr name="ddmenuSelectedIcon" format="reference" />
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+    </declare-styleable>
+
+    <!--&lt;!&ndash;圆角图片&ndash;&gt;-->
+    <declare-styleable name="RoundImageView">
+        <attr name="edgeWidth" format="reference|dimension"/>
+        <attr name="edgeRadius" format="reference|dimension"/>
+        <attr name="edgeColor" format="reference|color"/>
+        <attr name="hoverColor" format="reference|color"/>
+    </declare-styleable>
+
+
+    <!--viewpager滑动tab-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextColor" format="color" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="NumControlledEditText">
+        <attr name="maxNum" format="integer|reference"/>
+        <attr name="editHint" format="string|reference"/>
+    </declare-styleable>
+</resources>

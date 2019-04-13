@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/nosave_shot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不保留拍照原图" />
+
+        <CheckBox
+            android:id="@+id/always_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每次压缩前询问参数" />
+
+        <CheckBox
+            android:id="@+id/defalt_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用默认方式压缩"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/share_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="压缩完成后立即分享"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
